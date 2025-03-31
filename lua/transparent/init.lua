@@ -1,6 +1,6 @@
 local M = {}
 
-M.set_transparent = function(opts)
+M.setup = function(opts)
   local prefixes = opts.prefixes or {}
   for _, prefix in ipairs(prefixes) do
     local highlights = vim.fn.getcompletion(prefix, "highlight")
