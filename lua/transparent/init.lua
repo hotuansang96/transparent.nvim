@@ -10,6 +10,8 @@ M.setup = function(opts)
         hl.bg = "NONE" -- Preserve other attributes
         vim.api.nvim_set_hl(0, name, hl)
       end
+      local command_string = "highlight " .. name .. " guibg=NONE"
+      vim.cmd(command_string)
     end
   end
 end
